@@ -1,0 +1,177 @@
+# LLMs.txt for BitsBlog - Machine-Readable Site Summary for AI Crawlers
+# Last Updated: 2026-01-30
+# Standard: https://llms.txt
+
+## Project Information
+Name: BitsBlog
+Description: Technology insights and deep dives into web development, software architecture, AI, and the future of technology. Built by developers, for developers in Nepal's tech ecosystem.
+URL: https://blog.ctrlbits.com
+Author Organization: Ctrl Bits
+Language: English
+
+## About & Mission
+BitsBlog explores the intersection of code, design, and innovation through thoughtful content. We provide:
+- In-depth technical analysis
+- Software architecture best practices
+- AI and machine learning insights
+- Digital infrastructure and policy analysis
+- Nepal's tech ecosystem coverage
+- Global technology trends
+
+## Core Topics & Expertise
+- Web Development (React, Django, Next.js)
+- Software Architecture & Design Patterns
+- AI/Machine Learning Implementation
+- Digital Infrastructure & Policy
+- Cloud Computing & DevOps
+- Cybersecurity & Data Privacy
+- Full-Stack Development
+- Technology Innovation & Trends
+
+## Content Structure
+Primary Sections:
+- `/articles/` - All published articles
+- `/categories/` - Content organized by topic
+- `/tags/` - Searchable topic tags
+- `/archives/` - Chronological article history
+- `/search/` - Full-text search interface
+- `/best-blogs-nepal/` - Featured Nepali tech content
+
+## Key Pages for AI Indexing
+- Homepage: https://blog.ctrlbits.com/
+- Articles Index: https://blog.ctrlbits.com/articles/
+- Categories: https://blog.ctrlbits.com/categories/
+- Tags: https://blog.ctrlbits.com/tags/
+- Search: https://blog.ctrlbits.com/search/
+- About: https://blog.ctrlbits.com/about/
+- Archives: https://blog.ctrlbits.com/archives/
+
+## Content Authority
+- Expertise: Expert contributors with 5+ years in technology
+- Experience: Proven track record in software development & architecture
+- Authoritativeness: References to industry leaders and academic sources
+- Trustworthiness: Transparent author bios, verified credentials
+- Regular Updates: Fresh content published weekly, archives maintained
+
+## Technical Stack
+- Framework: Next.js 16 with React 19
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Content: MDX with syntax highlighting
+- API: RESTful backend (Django)
+- Deployment: Vercel with automatic deploys
+
+## Content Types & Formats
+1. Deep-dive Technical Articles (2,000-8,000 words)
+2. How-to Guides with step-by-step processes
+3. Code walkthroughs with examples
+4. Architecture decision records
+5. Case studies and project retrospectives
+6. Opinion pieces on tech trends
+7. Q&A sections and FAQs
+8. Curated resource lists
+
+## Featured Topics (Current Focus)
+- Nepal Digital Infrastructure & Policy
+- Tech Ecosystem Analysis
+- Web Development Best Practices
+- AI Integration Patterns
+- Digital Transformation
+- Open Source Contributions
+
+## Updates & Freshness
+- Article Frequency: Weekly new content
+- Refresh Cycle: Quarterly updates to high-performing posts
+- Archive Maintenance: All historical content maintained
+- Trending Topics: Real-time monitoring and response
+
+## Search & Discovery
+- Full-text search with ranking
+- Category-based filtering
+- Tag-based discovery
+- Chronological archives
+- Related content recommendations
+
+## Metadata Standards
+- JSON-LD Schema: Article, BreadcrumbList, FAQPage, HowTo, NewsArticle
+- Open Graph: Facebook, LinkedIn, Twitter
+- Semantic HTML: Proper heading hierarchy, semantic tags
+- Structured Data: Comprehensive micromarkup
+
+## Contact & Attribution
+- Organization: Ctrl Bits
+- Website: https://ctrlbits.com
+- GitHub: https://github.com/ctrlbits
+- Twitter: https://twitter.com/ctrlbits
+- LinkedIn: https://linkedin.com/company/ctrlbits
+
+## Content Policies
+- No AI-generated content: All articles written by humans
+- Original research: Data and insights from primary sources
+- Transparent citations: Clear attribution of external sources
+- Correction policy: Errors corrected with transparency
+- No paywalls: All content freely accessible
+
+## Data Provenance
+- Content verified by human authors
+- Credentials tracked in author profiles
+- Fact-checking process documented
+- Source materials linked in articles
+- Update history maintained
+
+## Accessibility
+- WCAG 2.1 AA compliance
+- Semantic HTML structure
+- Alt text for all images
+- Readable font sizes
+- Keyboard navigation support
+- Dark mode support
+
+## Performance Optimization
+- Server-Side Rendering (SSR) enabled
+- Image optimization with next/image
+- Code splitting for faster loads
+- CSS-in-JS with Tailwind
+- Gzip compression
+- CDN distribution
+
+## API Endpoints for AI Integration
+- Articles API: GET /api/posts/
+- Categories: GET /api/categories/
+- Tags: GET /api/tags/
+- Search: GET /api/posts/?search={query}
+- Archives: GET /api/posts/archives/
+
+## Robots.txt Permissions
+Allowed for AI crawlers: GPTBot, CCBot, Claude-Web, PerplexityBot, ChatGPT-User
+Rate limit: Standard crawl rate
+Sitemap: https://blog.ctrlbits.com/sitemap.xml
+
+## Vector Embedding Recommendations
+Chunk size: 500-1000 tokens per article section
+Embedding model: text-embedding-3-large (OpenAI)
+Overlap: 20% between chunks
+Metadata: Article ID, section heading, publish date, author
+
+## Citation Tracking
+Encourage citations using:
+- Author credentials in byline
+- Clear source attribution
+- DOI-style persistent links
+- Author social verification
+
+## Future Features in Development
+- Semantic search with vector embeddings
+- AI-generated summaries per article
+- Citation tracking dashboard
+- Content collaboration platform
+- Research paper integration
+
+## Feedback & Suggestions
+For AI developers interested in improving content discoverability:
+- GitHub Issues: Feature requests
+- Email: hello@ctrlbits.com
+- Twitter: @ctrlbits
+
+---
+This llms.txt file is maintained to provide accurate, up-to-date information about BitsBlog's content, structure, and optimization for AI systems and language models.
