@@ -2,6 +2,8 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+
+export const dynamic = 'force-dynamic';
 import Link from "next/link";
 import { postAPI } from "@/api/services";
 import { type Post } from "@/types";
@@ -2122,7 +2124,7 @@ function DashboardContent() {
 
 export default function Dashboard() {
   return (
-    <Suspense>
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-black"></div></div>}>
       <DashboardContent />
     </Suspense>
   );
