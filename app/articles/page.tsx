@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { Suspense } from "react";
 import ArticlesPageContent from "./ArticlesPageContent";
 
+export const dynamic = 'force-dynamic';
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://blog.ctrlbits.com";
 
 export const metadata: Metadata = {
