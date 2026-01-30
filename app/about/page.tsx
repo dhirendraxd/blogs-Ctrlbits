@@ -148,7 +148,7 @@ const About = () => {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
-      email: "hello@ctrlbits.com",
+      email: "hi@ctrlbits.com",
     },
   };
 
@@ -605,7 +605,7 @@ const About = () => {
               {/* Social Links */}
               <div className="flex flex-wrap justify-center gap-4 mb-12">
                 <a
-                  href="mailto:hello@ctrlbits.com"
+                  href="mailto:hi@ctrlbits.com"
                   className="flex items-center gap-2 px-6 py-3 border border-neutral-300 hover:border-black hover:bg-black hover:text-white transition-all group"
                 >
                   <Mail className="h-5 w-5" />

@@ -200,7 +200,7 @@ export const Contact = () => {
         "@type": "ContactPoint",
         telephone: "+977-9709659012",
         contactType: "customer support",
-        email: "hello@ctrlbits.com",
+        email: "hi@ctrlbits.com",
         availableLanguage: ["English"],
       },
       sameAs: [
@@ -485,10 +485,10 @@ export const Contact = () => {
                     <div>
                       <h3 className="font-medium text-black mb-1">Email</h3>
                       <a
-                        href="mailto:hello@ctrlbits.com"
+                        href="mailto:hi@ctrlbits.com"
                         className="text-sm text-neutral-600 hover:text-black transition-colors underline"
                       >
-                        hello@ctrlbits.com
+                        hi@ctrlbits.com
                       </a>
                     </div>
                   </div>
