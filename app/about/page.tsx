@@ -112,13 +112,13 @@ const About = () => {
 
   // SEO Data
   const pageTitle =
-    "About Ctrl Bits - Technology Innovation & Web Development | BitsBlog";
+    "About Ctrl Bits - Expert Technology Team & Web Development Leaders in Nepal | BitsBlog";
   const pageDescription =
-    "Learn about Ctrl Bits, a technology company dedicated to digital innovation, web development, and modern software solutions. We build the future of technology, one bit at a time.";
+    "Meet the expert team behind BitsBlog and Ctrl Bits. Based in Kathmandu, Nepal, we're experienced technology leaders specializing in full-stack web development, AI/ML solutions, and modern software architecture. Trusted by Nepal's tech community since 2020.";
   const pageUrl = getAbsoluteUrl("/about");
   const ogImage = getAbsoluteUrl("/og-about.jpg");
   const keywords =
-    "Ctrl Bits, about us, web development company, software development, technology innovation, digital solutions, React, Django, AI development";
+    "Ctrl Bits, about BitsBlog, bit blogs, expert tech team Nepal, web development company Nepal, software development Nepal, technology innovation Nepal, digital solutions, React experts Nepal, Django developers, AI development Nepal, full-stack developers Kathmandu, Nepal tech leaders, experienced developers, trusted technology company, web development expertise, software architecture Nepal, BitsBlog team, Nepal web development, technology company Kathmandu, bit blogs Nepal";
 
   // Organization structured data
   const organizationSchema = {
@@ -127,20 +127,26 @@ const About = () => {
     name: "Ctrl Bits",
     url: getAbsoluteUrl("/"),
     logo: getAbsoluteUrl("/logo.png"),
-    description: pageDescription,
+    description: "Expert technology company specializing in web development, AI/ML solutions, and modern software architecture in Nepal. Empowering Nepal's tech ecosystem through expert content and community building since 2020.",
     foundingDate: "2020",
     founders: [
       {
         "@type": "Person",
-        name: "Ctrl Bits Team",
+        name: "Ctrl Bits Founding Team",
+        description: "Experienced full-stack developers and technology leaders",
       },
     ],
     address: {
       "@type": "PostalAddress",
-      addressCountry: "Nepal",
+      addressCountry: "NP",
       addressRegion: "Bagmati Province",
       addressLocality: "Kathmandu",
     },
+    areaServed: {
+      "@type": "Place",
+      name: "Nepal"
+    },
+    knowsAbout: ["Web Development", "Software Architecture", "AI/ML", "Full-Stack Development", "React", "Django", "Next.js", "TypeScript"],
     sameAs: [
       "https://facebook.com/ctrlbits",
       "https://twitter.com/ctrlbits",
@@ -151,6 +157,7 @@ const About = () => {
       "@type": "ContactPoint",
       contactType: "Customer Service",
       email: "hi@ctrlbits.com",
+      availableLanguage: ["English", "Nepali"]
     },
   };
 
