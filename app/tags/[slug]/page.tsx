@@ -49,7 +49,11 @@ async function getTagPosts(slug: string) {
     }
 
     const data = await res.json();
-    return Array.isArray(data) ? data : data.results || [];
+    // Handle both paginated and non-paginated responses
+    if (Array.isArray(data)) {
+      return data;
+    }
+    return data.results || [];
   } catch (error) {
     console.error("Error fetching tag posts:", error);
     return [];
