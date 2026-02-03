@@ -128,7 +128,7 @@ export default function CategoryViewPageClient({
           `${category.description} Browse ${category.posts_count} article${
             category.posts_count !== 1 ? "s" : ""
           } in ${category.name} category.`,
-          155
+          155,
         )
       : `Explore ${category.posts_count} article${
           category.posts_count !== 1 ? "s" : ""
@@ -138,7 +138,7 @@ export default function CategoryViewPageClient({
 
     const keywords = `${category.name}, ${category.name} articles, ${category.name} tutorials, ${category.name} guides, tech blog, programming, web development`;
 
-    const canonicalUrl = getAbsoluteUrl(`/category/${slug}`);
+    const canonicalUrl = getAbsoluteUrl(`/categories/${slug}`);
     const ogImage = getAbsoluteUrl("/og-categories.jpg");
 
     return {
