@@ -64,9 +64,10 @@ async function getCategoryPosts(slug: string) {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const category = await getCategory(params.slug);
+  const { slug } = await params;
+  const category = await getCategory(slug);
 
   if (!category) {
     return {
@@ -160,11 +161,12 @@ export async function generateStaticParams() {
 export default async function CategoryViewPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
   const [category, posts] = await Promise.all([
-    getCategory(params.slug),
-    getCategoryPosts(params.slug),
+    getCategory(slug),
+    getCategoryPosts(slug),
   ]);
 
   if (!category) {
@@ -272,7 +274,7 @@ export default async function CategoryViewPage({
       <CategoryViewPageClient
         initialCategory={category}
         initialPosts={posts}
-        slug={params.slug}
+        slug={(await params).slug}
       />
     </>
   );

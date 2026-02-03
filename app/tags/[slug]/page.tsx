@@ -64,9 +64,10 @@ async function getTagPosts(slug: string) {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const tag = await getTag(params.slug);
+  const { slug } = await params;
+  const tag = await getTag(slug);
 
   if (!tag) {
     return {
@@ -158,12 +159,10 @@ export async function generateStaticParams() {
 export default async function TagViewPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const [tag, posts] = await Promise.all([
-    getTag(params.slug),
-    getTagPosts(params.slug),
-  ]);
+  const { slug } = await params;
+  const [tag, posts] = await Promise.all([getTag(slug), getTagPosts(slug)]);
 
   if (!tag) {
     notFound();
@@ -270,7 +269,7 @@ export default async function TagViewPage({
       <TagViewPageClient
         initialTag={tag}
         initialPosts={posts}
-        slug={params.slug}
+        slug={(await params).slug}
       />
     </>
   );
